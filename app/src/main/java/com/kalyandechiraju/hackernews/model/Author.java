@@ -42,4 +42,12 @@ public class Author {
         this.matchedWords = matchedWords;
     }
 
+    @Override
+    public String toString() {
+        return "Author{" +
+                "value='" + value + '\'' +
+                ", matchLevel='" + matchLevel + '\'' +
+                ", matchedWords=" + matchedWords +
+                '}';
+    }
 }

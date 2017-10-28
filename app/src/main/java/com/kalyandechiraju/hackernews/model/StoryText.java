@@ -42,4 +42,12 @@ public class StoryText {
         this.matchedWords = matchedWords;
     }
 
+    @Override
+    public String toString() {
+        return "StoryText{" +
+                "value='" + value + '\'' +
+                ", matchLevel='" + matchLevel + '\'' +
+                ", matchedWords=" + matchedWords +
+                '}';
+    }
 }

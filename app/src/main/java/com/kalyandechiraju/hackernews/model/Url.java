@@ -53,4 +53,13 @@ public class Url {
         this.matchedWords = matchedWords;
     }
 
+    @Override
+    public String toString() {
+        return "Url{" +
+                "value='" + value + '\'' +
+                ", matchLevel='" + matchLevel + '\'' +
+                ", fullyHighlighted=" + fullyHighlighted +
+                ", matchedWords=" + matchedWords +
+                '}';
+    }
 }

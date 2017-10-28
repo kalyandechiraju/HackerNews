@@ -53,4 +53,13 @@ public class Title {
         this.matchedWords = matchedWords;
     }
 
+    @Override
+    public String toString() {
+        return "Title{" +
+                "value='" + value + '\'' +
+                ", matchLevel='" + matchLevel + '\'' +
+                ", fullyHighlighted=" + fullyHighlighted +
+                ", matchedWords=" + matchedWords +
+                '}';
+    }
 }

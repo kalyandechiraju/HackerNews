@@ -108,4 +108,18 @@ public class News {
         this.params = params;
     }
 
+    @Override
+    public String toString() {
+        return "News{" +
+                "hits=" + hits +
+                ", nbHits=" + nbHits +
+                ", page=" + page +
+                ", nbPages=" + nbPages +
+                ", hitsPerPage=" + hitsPerPage +
+                ", processingTimeMS=" + processingTimeMS +
+                ", exhaustiveNbHits=" + exhaustiveNbHits +
+                ", query='" + query + '\'' +
+                ", params='" + params + '\'' +
+                '}';
+    }
 }

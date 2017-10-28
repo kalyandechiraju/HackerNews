@@ -51,4 +51,13 @@ public class HighlightResult {
         this.storyText = storyText;
     }
 
+    @Override
+    public String toString() {
+        return "HighlightResult{" +
+                "title=" + title +
+                ", url=" + url +
+                ", author=" + author +
+                ", storyText=" + storyText +
+                '}';
+    }
 }

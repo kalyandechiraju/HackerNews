@@ -185,4 +185,25 @@ public class Hit {
         this.highlightResult = highlightResult;
     }
 
+    @Override
+    public String toString() {
+        return "Hit{" +
+                "createdAt='" + createdAt + '\'' +
+                ", title='" + title + '\'' +
+                ", url='" + url + '\'' +
+                ", author='" + author + '\'' +
+                ", points=" + points +
+                ", storyText=" + storyText +
+                ", commentText=" + commentText +
+                ", numComments=" + numComments +
+                ", storyId=" + storyId +
+                ", storyTitle=" + storyTitle +
+                ", storyUrl=" + storyUrl +
+                ", parentId=" + parentId +
+                ", createdAtI=" + createdAtI +
+                ", tags=" + tags +
+                ", objectID='" + objectID + '\'' +
+                ", highlightResult=" + highlightResult +
+                '}';
+    }
 }
