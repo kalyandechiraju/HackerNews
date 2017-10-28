@@ -1,7 +1,9 @@
-package com.kalyandechiraju.hackernews;
+package com.kalyandechiraju.hackernews.view;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.kalyandechiraju.hackernews.R;
 
 public class MainActivity extends AppCompatActivity {
 
