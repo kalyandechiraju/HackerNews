@@ -31,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.news_list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        NewsAdapter adapter = new NewsAdapter(null);
+        NewsAdapter adapter = new NewsAdapter(null, this);
         recyclerView.setAdapter(adapter);
 
-        newsViewModel.downloadNews("premier league");
+        //newsViewModel.downloadNews("premier league");
         newsViewModel.setNewsAdapter(adapter);
     }
 }

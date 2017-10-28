@@ -27,18 +27,19 @@ public class NewsViewModel extends BaseViewModel {
     private ObservableField<Boolean> isDataLoaded = new ObservableField<>(true);
     private ObservableField<Boolean> didErrorOccur = new ObservableField<>(false);
 
+    private String searchQuery;
+
     private NewsAdapter newsAdapter;
-    private Context context;
 
     @Inject
     NewsAPI newsAPI;
 
     public NewsViewModel(Context context) {
         ((HackerNews) context).getNetworkComponent().inject(this);
-        this.context = context;
     }
 
     public void downloadNews(String query) {
+        Log.d(TAG, "Query: " + query);
         isDataLoaded.set(false);
         newsAPI.getNews(query).enqueue(new Callback<News>() {
             @Override
@@ -75,7 +76,15 @@ public class NewsViewModel extends BaseViewModel {
         return didErrorOccur;
     }
 
+    public String getSearchQuery() {
+        return searchQuery;
+    }
+
     public void setNewsAdapter(NewsAdapter newsAdapter) {
         this.newsAdapter = newsAdapter;
+    }
+
+    public void setSearchQuery(String searchQuery) {
+        this.searchQuery = searchQuery;
     }
 }
